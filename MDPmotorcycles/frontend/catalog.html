@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MDPmotorcycles - Catálogo de Motos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* Style for the refresh catalog button */
+        #refresh-catalog-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 15px;
+            transition: background-color 0.3s ease;
+        }
+        #refresh-catalog-btn:hover {
+            background-color: #0056b3;
+        }
+        #refresh-catalog-btn:active {
+            background-color: #004085;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MDPmotorcycles</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalog.html" class="active">Catálogo de Motos</a></li>
+                <li><a href="accessories.html">Accesorios</a></li>
+                <li><a href="login.html">Login / Registro</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Catálogo de Motos</h2>
+            <button id="refresh-catalog-btn">Actualizar Catálogo</button>
+            <div id="motos-list">
+                <!-- Motos will be loaded here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MDPmotorcycles</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
